@@ -1,0 +1,42 @@
+.chart {
+  height: 46%;
+  width: 97%;
+  border: 1px solid gray;
+  border-radius: 0.2rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+
+  .titleContainer {
+    background-color: lightblue;
+    width: 100%;
+    height: 17%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h3 {
+      margin: 0;
+      margin-left: 1rem;
+    }
+    .dropdown {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      padding: 0 0.7rem;
+      height: 2rem;
+      width: 4rem;
+      background-color: rgb(226, 226, 226);
+      border-radius: 0.5rem;
+      margin-right: 1rem;
+      color: rgb(0, 0, 200);
+    }
+  }
+
+  .chartContainer {
+    height: 83%;
+    width: 100%;
+    background-color: lightcyan;
+  }
+}

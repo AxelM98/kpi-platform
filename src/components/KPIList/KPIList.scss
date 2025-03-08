@@ -1,0 +1,69 @@
+.KPIList {
+  height: 85%;
+  width: 98%;
+  border: 1px solid gray;
+  border-radius: .2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  .line {
+    width: 0.1rem;
+    height: 4rem;
+    background-color: lightgray;
+  }
+  .details {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+    .detailsTop {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .title {
+        margin: 0;
+        font-size: medium;
+      }
+      .performance {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2rem;
+        width: 4rem;
+        background-color: rgb(185, 255, 185);
+        color: green;
+        border-radius: 2rem;
+        p {
+          color: green;
+        }
+      }
+      .negative{
+        background-color: rgb(255, 196, 196);
+        color: red;
+        p {
+            color: red;
+          }
+      }
+    }
+
+    .title {
+      margin: 0;
+      font-size: medium;
+      color: black;
+    }
+
+    p {
+      margin: 0;
+      font-size: small;
+      color: gray;
+    }
+    h3 {
+      margin: 0;
+      font-size: xx-large;
+      color: rgb(0, 0, 200);
+    }
+  }
+}

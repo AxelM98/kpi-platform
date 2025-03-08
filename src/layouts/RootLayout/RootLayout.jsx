@@ -10,7 +10,9 @@ const RootLayout = () => {
       <Sidebar />
       <div className="right">
         <Navbar />
-        <Outlet />
+        <div className="main">
+          <Outlet />
+        </div>
       </div>
     </div>
   );

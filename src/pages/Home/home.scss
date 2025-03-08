@@ -1,4 +1,34 @@
 .home {
-  border: 2px solid yellow;
-  height: 85%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: rgb(250, 255, 255);
+  .top {
+    height: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bottom {
+    display: flex;
+    height: 78%;
+    .bottomLeft {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .bottomRight {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+  }
 }
