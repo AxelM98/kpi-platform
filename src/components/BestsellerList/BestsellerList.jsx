@@ -1,12 +1,19 @@
 import React from "react";
 import "./bestsellerList.scss";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import data from "../../../data.json";
+
+const bestsellerListData = data.BestsellerList;
 
 const BestsellerList = () => {
+  const sortedBestsellerList = bestsellerListData.sort(
+    (a, b) => b.purchases - a.purchases
+  );
+
   return (
     <div className="bestsellerList">
       <div className="titleContainer">
-        <h3>Mest sålda produkter</h3>
+        <h3>Mest sålda produkter (till antalet)</h3>
         <div className="dropdown">
           <p>Alla</p>
           <KeyboardArrowDownIcon />
@@ -21,28 +28,24 @@ const BestsellerList = () => {
       <div className="line"></div>
       <div className="tableProductsWrapper">
         <div className="tableProducts">
-          <p className="tableProduct product">Nike Pegaus 41</p>
-          <p className="tableProduct product">NB 1080 v14</p>
-          <p className="tableProduct product">Asics Nimbus 27</p>
-          <p className="tableProduct product">GMI Forerunner 265</p>
+          {sortedBestsellerList.map((item, i) => (
+            <p key={i} className="tableProduct product">{item.product}</p>
+          ))}
         </div>
         <div className="tableProducts">
-          <p className="tableProduct quantity">300 st</p>
-          <p className="tableProduct quantity">250 st</p>
-          <p className="tableProduct quantity">200 st</p>
-          <p className="tableProduct quantity">150 st</p>
+          {sortedBestsellerList.map((item, i) => (
+            <p key={i} className="tableProduct quantity">{item.purchases} st</p>
+          ))}
         </div>
         <div className="tableProducts">
-          <p className="tableProduct price">1799 kr</p>
-          <p className="tableProduct price">2099 kr</p>
-          <p className="tableProduct price">2199 kr</p>
-          <p className="tableProduct price">4699 kr</p>
+          {sortedBestsellerList.map((item, i) => (
+            <p key={i} className="tableProduct price">{item.averagePrice.toLocaleString()} kr</p>
+          ))}
         </div>
         <div className="tableProducts">
-          <p className="tableProduct sales">3 000 000 kr</p>
-          <p className="tableProduct sales">2 000 000 kr</p>
-          <p className="tableProduct sales">1 000 000 kr</p>
-          <p className="tableProduct sales">500 000 kr</p>
+          {sortedBestsellerList.map((item, i) => (
+            <p key={i} className="tableProduct sales">{item.sales.toLocaleString()} kr</p>
+          ))}
         </div>
       </div>
     </div>

@@ -1,0 +1,80 @@
+{
+  "KPIList": {
+    "totalProductsInStock": 11245,
+    "todaysSales": 34250,
+    "visitorsToday": 287,
+    "bestsellerToday": "Nike Pegasus 41",
+    "purchasesToday": 203
+  },
+  "Chart": {
+    "data": [
+      { "day": "2024-02-01", "sales": 15000 },
+      { "day": "2024-02-02", "sales": 18000 },
+      { "day": "2024-02-03", "sales": 12000 },
+      { "day": "2024-02-04", "sales": 20000 },
+      { "day": "2024-02-05", "sales": 22000 },
+      { "day": "2024-02-06", "sales": 17000 },
+      { "day": "2024-02-07", "sales": 25000 },
+      { "day": "2024-02-08", "sales": 19000 },
+      { "day": "2024-02-09", "sales": 23000 },
+      { "day": "2024-02-10", "sales": 21000 },
+      { "day": "2024-02-11", "sales": 26000 },
+      { "day": "2024-02-12", "sales": 24000 },
+      { "day": "2024-02-13", "sales": 27000 },
+      { "day": "2024-02-14", "sales": 30000 },
+      { "day": "2024-02-15", "sales": 28000 },
+      { "day": "2024-02-16", "sales": 29000 },
+      { "day": "2024-02-17", "sales": 31000 },
+      { "day": "2024-02-18", "sales": 32000 },
+      { "day": "2024-02-19", "sales": 33000 },
+      { "day": "2024-02-20", "sales": 34000 },
+      { "day": "2024-02-21", "sales": 35000 },
+      { "day": "2024-02-22", "sales": 36000 },
+      { "day": "2024-02-23", "sales": 37000 },
+      { "day": "2024-02-24", "sales": 38000 },
+      { "day": "2024-02-25", "sales": 39000 },
+      { "day": "2024-02-26", "sales": 40000 },
+      { "day": "2024-02-27", "sales": 41000 },
+      { "day": "2024-02-28", "sales": 42000 },
+      { "day": "2024-02-29", "sales": 43000 }
+    ]
+  },
+  "BestsellerList": [
+    {
+      "product": "Nike Pegasus 41",
+      "purchases": 35,
+      "averagePrice": 1399,
+      "sales": 48965
+    },
+    {
+      "product": "Adidas Ultraboost 5X",
+      "purchases": 28,
+      "averagePrice": 1599,
+      "sales": 44772
+    },
+    {
+      "product": "Garmin Forerunner 255",
+      "purchases": 15,
+      "averagePrice": 3799,
+      "sales": 56985
+    },
+    {
+      "product": "2XU Compression Tights",
+      "purchases": 20,
+      "averagePrice": 999,
+      "sales": 19980
+    }
+  ],
+  "KPICard": {
+    "topSellingCustomerCategories": [
+      { "category": "Löpare", "percentage": 50 },
+      { "category": "Gymkunder", "percentage": 30 },
+      { "category": "Motionärer", "percentage": 20 }
+    ],
+    "topSellingProductCategories": [
+      { "category": "Löparskor", "percentage": 60 },
+      { "category": "Träningskläder", "percentage": 25 },
+      { "category": "Löparklockor", "percentage": 15 }
+    ]
+  }
+}

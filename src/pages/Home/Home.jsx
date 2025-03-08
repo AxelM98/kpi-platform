@@ -4,6 +4,12 @@ import KPIList from "./../../components/KPIList/KPIList";
 import Chart from "./../../components/Chart/Chart";
 import BestsellerList from "./../../components/BestsellerList/BestsellerList";
 import KPICard from "./../../components/KPICard/KPICard";
+import data from "../../../data.json";
+
+const topSellingCustomerCategoriesData =
+  data.KPICard.topSellingCustomerCategories;
+const topSellingProductCategoriesData =
+  data.KPICard.topSellingProductCategories;
 
 const Home = () => {
   return (
@@ -17,8 +23,14 @@ const Home = () => {
           <BestsellerList />
         </div>
         <div className="bottomRight">
-          <KPICard />
-          <KPICard />
+          <KPICard
+            title="Kundkategorier"
+            data={topSellingCustomerCategoriesData}
+          />
+          <KPICard
+            title="Produktkategorier"
+            data={topSellingProductCategoriesData}
+          />
         </div>
       </div>
     </div>

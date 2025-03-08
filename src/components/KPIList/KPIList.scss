@@ -19,6 +19,9 @@
     flex-direction: column;
     justify-content: center;
     padding-left: 2rem;
+    .date{
+      text-transform: capitalize;
+    }
     .detailsTop {
       display: flex;
       align-items: center;
