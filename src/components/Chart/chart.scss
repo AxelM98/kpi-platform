@@ -6,19 +6,21 @@
   background-color: white;
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   .titleContainer {
-    background-color: lightblue;
     width: 100%;
-    height: 17%;
+    height: 20%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     h3 {
       margin: 0;
       margin-left: 1rem;
+      font-weight: bold;
+      font-size: large;
     }
-    .dropdown {
+    .dropdownContainer {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -26,17 +28,48 @@
       margin-bottom: 0.5rem;
       padding: 0 0.7rem;
       height: 2rem;
-      width: 4rem;
+      width: 8rem;
       background-color: rgb(226, 226, 226);
       border-radius: 0.5rem;
       margin-right: 1rem;
       color: rgb(0, 0, 200);
+      position: relative;
+      cursor: pointer;
+      transition: all 0.5s ease;
+      .dropdown {
+        position: absolute;
+        left: 0;
+        top: 2rem;
+        width: 8rem;
+        z-index: 999;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+        background-color: rgb(226, 226, 226, 1);
+        color: rgb(0, 0, 200);
+        display: flex;
+        flex-direction: column;
+        font-size: 0.8rem;
+        .dropdownAlt {
+          padding: 0.5rem 1rem;
+          border-bottom: 1px solid lightgray;
+          cursor: pointer;
+          transition: all 0.5s ease;
+        }
+        .dropdownAlt:hover {
+          background-color: rgb(200, 200, 200);
+        }
+        :nth-child(13) {
+          border-bottom: none;
+        }
+      }
+    }
+    .dropdownContainer:hover {
+      background-color: rgb(200, 200, 200);
     }
   }
 
   .chartContainer {
-    height: 83%;
-    width: 100%;
-    background-color: lightcyan;
+    height: 75%;
+    width: 95%;
+    display: flex;
   }
 }
